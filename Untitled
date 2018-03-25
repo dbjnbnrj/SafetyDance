@@ -1,0 +1,6 @@
+for (var key in p) {
+    if (p.hasOwnProperty(key) && typeof p[key] === 'object') {
+      const {latitude, longitude}= JSON.stringify(p[key]);
+      console.log(latitude , longitude)
+    }
+}
